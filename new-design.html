@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAIN Online - Document Re-upload Request</title>
+
+<style>
+body{
+  margin:0;
+  padding:0;
+  background:#f2f4f7;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.email-wrapper {
+    width: 100%;
+    background: #f2f4f7;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Main container */
+.email-container{
+  max-width:600px;
+  margin:auto;
+  background:#ffffff;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+.header {
+    padding: 15px 20px;
+}
+
+
+
+.logo{
+  width:140px;
+}
+
+/* Hero */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:0 18px 18px;
+}
+
+.hero-title{
+  font-size:28px;
+  font-weight:700;
+  line-height:34px;
+  color:#111827;
+}
+
+.hero img{
+  width:220px;
+}
+
+/* Program bar */
+.program-bar{
+  background:#0b2d5c;
+  padding:10px;
+  text-align:center;
+  color:#fff;
+  font-weight:700;
+  font-size:14px;
+}
+
+/* Body */
+.body{
+  padding:22px 26px;
+  color:#374151;
+  font-size:14px;
+  line-height:22px;
+}
+
+.highlight{
+  background:#ffd54a;
+  padding:2px 6px;
+  border-radius:4px;
+  font-weight:700;
+  color:#111827;
+}
+
+/* Button */
+.cta{
+  text-align:center;
+  margin:20px 0;
+}
+
+.cta a{
+  background:#ffd54a;
+  padding:14px 34px;
+  font-size:16px;
+  font-weight:700;
+  border-radius:10px;
+  color:#111827;
+  text-decoration:none;
+  display:inline-block;
+}
+
+/* Footer */
+.footer{
+  background:#0b2d5c;
+  padding:18px;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+}
+
+.footer-left {
+    color: #fff;
+    width: 50%;
+}
+.footer-left img{
+  width:100%;
+  margin-bottom:10px;
+}
+
+.footer-title{
+  font-size:20px;
+  font-weight:800;
+  line-height:26px;
+}
+
+.footer-sub{
+  font-size:16px;
+  font-weight:700;
+}
+
+.testimonial {
+    border-radius: 10px;
+    width: 50%;
+}
+.testimonial-title{
+  font-size:12px;
+  font-weight:800;
+  color:#0b2d5c;
+}
+.hero-title h1 {
+    font-size: 22px;
+}
+.Main_logo {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.testimonial img{
+  width:100%;
+  border-radius:8px;
+}
+
+.quote{
+  font-size:12px;
+  font-weight:700;
+  color:#111827;
+}
+
+.quote-sub{
+  font-size:12px;
+  color:#6b7280;
+}
+.hero-title p {
+    color: #374151;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.footer-title p {
+    background: #0b2d5c;
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+.Main_logo_2 {
+    text-align: right;
+}
+
+/* Mobile */
+@media(max-width:620px){
+
+.hero{
+  flex-direction:column;
+  text-align:center;
+}
+
+.hero img{
+  width:100%;
+  max-width:280px;
+  margin-top:12px;
+}
+
+.footer{
+  flex-direction:column;
+  gap:20px;
+}
+
+.testimonial{
+  width:100%;
+}
+
+.cta a{
+  width:100%;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="email-wrapper">
+<div class="email-container">
+
+<!-- Header -->
+<section class="header">
+<div class="Main_logo">
+    <div class="Main_logo_1">
+        <img class="logo" src="./main-logo.png" alt="JAIN Online Logo">
+    </div>
+        <div class="Main_logo_2">
+        <img class="logo" src="./new-logo.png" alt="JAIN Online Logo">
+    </div>
+
+</div>
+</section>
+
+<!-- Hero -->
+<section class="hero">
+
+<div class="hero-title">
+<h1>Dear <span class="highlight">Akshay ,</span>
+ </h1>
+ <p>Greetings from Dayananda Sagar University | Online!</p>
+<p>Thank you for showing interest in our  Online {{ud.university_id|Programme}}  Degree Program. We’re delighted to connect with you. Email vendor box(no button)
+</p>
+</div>
+
+</section>
+
+<!-- Program Bar -->
+<section class="program-bar">
+Online Degree Programs: B.Com | BBA | MBA | MCA | M.Com | MA
+</section>
+
+<!-- Body -->
+<section class="body">
+<p>
+To help you gain a better understanding of the program—including the learner experience, key features, curriculum, and potential career pathways—please feel free to explore the link below:
+
+</p>
+<p>Additionally, one of our program counselors will reach out to you at the earliest to guide you through the program and address any questions you may have. </p>
+<p>If you have any immediate queries in the meantime, please don’t hesitate to get in touch with us—we’re happy to help. Please reach out to us at + 91 9880147004</p>
+
+<div class="cta">
+<a href="#">Submit Now</a>
+</div>
+
+<p>Do you want to know more about how to upload your documents?</p>
+
+<p>
+<a href="#" style="color:#0b2d5c;font-weight:700;">Watch Now</a>
+</p>
+
+<p>
+For any queries, please call us at:
+<a href="tel:+918310180191" style="color:#0b2d5c;font-weight:700;text-decoration:none;">
++91 8310180191
+</a>
+</p>
+
+</section>
+
+<!-- Footer -->
+<section class="footer">
+
+<div class="footer-left">
+
+<div class="footer-title">
+<p>Best Wishes<br>
+Admission Team<br>
+Dayananda Sagar University | Online <br>
+www.dsuonline.com"<br>
+</p>
+</div>
+
+
+</div>
+
+<div class="testimonial">
+
+
+<div class="testimonial-content">
+<img src="./clg-image.jpeg" alt="Student">
+
+<div>
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+</div>
+</div>
+
+</body>
+</html>
