@@ -36,22 +36,31 @@ body{
 
 
 .logo{
-  width:140px;
+  width:200px;
 }
 
 /* Hero */
-.hero{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  padding:0 18px 18px;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
 }
-
+.new_image_banner {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.footer-title p {
+    color: #fff !important;
+}
 .hero-title{
   font-size:28px;
   font-weight:700;
   line-height:34px;
   color:#111827;
+      width: 60%;
 }
 
 .hero img{
@@ -60,7 +69,7 @@ body{
 
 /* Program bar */
 .program-bar{
-  background:#0b2d5c;
+  background:#017DC5;
   padding:10px;
   text-align:center;
   color:#fff;
@@ -91,7 +100,7 @@ body{
 }
 
 .cta a{
-  background:#ffd54a;
+  background:#FEF200;
   padding:14px 34px;
   font-size:16px;
   font-weight:700;
@@ -103,7 +112,7 @@ body{
 
 /* Footer */
 .footer{
-  background:#0b2d5c;
+  background:#017DC5;
   padding:18px;
   display:flex;
   justify-content:space-between;
@@ -137,10 +146,10 @@ body{
 .testimonial-title{
   font-size:12px;
   font-weight:800;
-  color:#0b2d5c;
+  color:#017DC5;
 }
 .hero-title h1 {
-    font-size: 22px;
+    font-size: 18px;
 }
 .Main_logo {
     display: flex;
@@ -164,13 +173,16 @@ body{
   color:#6b7280;
 }
 .hero-title p {
-    color: #374151;
+    color: #000;
     font-size: 14px;
     line-height: 22px;
     font-weight: 500;
 }
+.body p{
+  color: #000;
+}
 .footer-title p {
-    background: #0b2d5c;
+    background: #017DC5;
     padding: 10px;
     color: #fff;
     font-weight: 500;
@@ -182,6 +194,9 @@ body{
 
 /* Mobile */
 @media(max-width:620px){
+  .hero-title {
+    width: 100%;
+}
 
 .hero{
   flex-direction:column;
@@ -190,8 +205,13 @@ body{
 
 .hero img{
   width:100%;
-  max-width:280px;
   margin-top:12px;
+}
+.new_image_banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .footer{
@@ -239,6 +259,10 @@ body{
 <p>Thank you for showing interest in our  Online {{ud.university_id|Programme}}  Degree Program. We’re delighted to connect with you. Email vendor box(no button)
 </p>
 </div>
+<div class="new_image_banner">
+  <img src="./banner.jpg" alt="">
+
+</div>
 
 </section>
 
@@ -263,12 +287,12 @@ To help you gain a better understanding of the program—including the learner e
 <p>Interested in joining DSU Online?</p>
 
 <p>
-<a href="https://www.dsuonline.com/" style="color:#0b2d5c;font-weight:700;">Visit us : www.dsuonline.com</a>
+<a href="https://www.dsuonline.com/" style="color:#017DC5;font-weight:700;">Visit us : www.dsuonline.com</a>
 </p>
 
 <p>
 For admissions support, contact us at: 
-<a href="tel:+919880147004" style="color:#0b2d5c;font-weight:700;text-decoration:none;">
+<a href="tel:+919880147004" style="color:#017DC5;font-weight:700;text-decoration:none;">
 +91 9880147004
 </a>
 </p>
@@ -313,7 +337,6 @@ Dayananda Sagar University | Online <br>
 
 </body>
 </html>
-
 
 
 
