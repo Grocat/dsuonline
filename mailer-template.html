@@ -240,14 +240,15 @@ section.hero_new {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    gap: 10px;
+    gap: 20px;
     max-width: 750px;
-    width: 55%;
+    width: 100%;
 }
 
 .card {
     border-radius: 16px;
     overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     background: #fff;
 }
 
@@ -300,18 +301,7 @@ section.hero_new {
     font-family: poppins;
     font-weight: 600;
 }
-@media(max-width:1024px){
-  .new_mailer_mail {
-    flex-direction: column;
-        height: auto;
-}
-  .new_section_mail {
-    width: 100%;
-}
-  .container_new {
-    width: 100%;
-}
-}
+
 /* Mobile */
 @media(max-width:620px){
       .container_new {
@@ -411,9 +401,8 @@ section.hero_new {
 
     <!-- Top Right Blue Card -->
     <div class="card card-blue">
-        <span>Learn More About The Program.</span>
-        <div class="arrow">→</div>
-    </div>
+<a href="">        <span>Learn More About The Program.</span>
+        <div class="arrow">→</div></a>
     </div>
 
     <!-- Bottom Right Image -->
@@ -498,10 +487,6 @@ Dayananda Sagar University | Online <br>
 
 </body>
 </html>
-
-
-
-
 
 
 
