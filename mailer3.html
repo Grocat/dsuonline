@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSU Online Poster</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=DM+Sans:wght@500;700;800&family=Allura&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root{
+      --page-bg:#d8d8e4;
+      --white:#ffffff;
+      --shadow:0 20px 50px rgba(140, 82, 99, 0.08);
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--page-bg);
+      font-family:"Outfit", "DM Sans", Arial, sans-serif;
+      padding:40px 16px;
+    }
+
+    .frame{
+      width:min(100%, 1220px);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:24px;
+    }
+
+    .poster{
+      position:relative;
+      width:min(90vw, 910px);
+      aspect-ratio:1080 / 1350;
+      background:#01188C;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+    }
+
+    .header_main_image{
+      padding:1rem;
+      display:flex;
+      justify-content:space-between;
+      background:#fff;
+      z-index:5;
+      position:relative;
+    }
+
+    .header_main_image img{
+      width:220px;
+    }
+
+    .headline{
+      position:absolute;
+      left:9%;
+      top:15%;
+      width:48%;
+      color:#fff;
+    }
+
+    .headline .sans{
+      font-size:50px;
+      font-weight:900;
+      line-height:60px;
+    }
+
+    .headline .script{
+      font-size:50px;
+      font-weight:700;
+    }
+
+    .person-wrap{
+      position:absolute;
+      right:30px;
+      top:18%;
+      width:50%;
+    }
+
+    .person{
+      width:100%;
+    }
+
+    .info-card{
+      position:absolute;
+      left:6%;
+      right:6%;
+      top:45%;
+      border-radius:48px;
+      padding:30px;
+      background:linear-gradient(135deg, rgba(85, 98, 188, 0.92), rgba(65, 78, 168, 0.76));
+      color:#fff;
+    }
+
+    .script-small{
+      font-size:32px;
+      font-weight:700;
+    }
+
+    .value{
+      font-size:16px;
+      line-height:26px;
+      margin-top:10px;
+    }
+
+    .footer_image_div{
+      position:absolute;
+      left:6%;
+      right:6%;
+      bottom:6%;
+      display:flex;
+      justify-content:space-between;
+    }
+
+    .footer_image_div img{
+      width:45%;
+    }
+
+    /* SOCIAL ICONS */
+.social-icons {
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+    right: 6%;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+.social_inner {
+    display: flex;
+    gap: 14px;
+}
+
+    .social-icons p{
+      margin:0;
+      font-size:14px;
+    }
+
+    .social-icons a{
+      width:32px;
+      height:32px;
+      background:#fff;
+      color:#01188C;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+    }
+
+    /* MOBILE FIX */
+    @media(max-width:640px){
+
+      .poster{
+        aspect-ratio:auto;
+        min-height:950px;
+        padding-bottom:20px;
+      }
+
+.headline {
+        position: relative;
+        padding: 20px;
+        width: auto;
+        top: 0;
+    }
+      .headline .sans{
+        font-size:28px;
+        line-height:34px;
+      }
+
+      .headline .script{
+        font-size:30px;
+      }
+
+      .person-wrap{
+        position:relative;
+        width:70%;
+        margin-left:auto;
+      }
+
+.info-card {
+        position: relative;
+        margin: 20px;
+        left: 0;
+        right: 0;
+    }
+
+.footer_image_div {
+        position: relative;
+        margin: 10px 20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+.social-icons {
+        position: relative;
+        margin: 10px 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+      .social-icons p{
+        width:100%;
+        text-align:center;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="frame">
+
+<section class="poster">
+
+  <!-- HEADER -->
+  <div class="header_main_image">
+    <img src="./main-logo.png">
+    <img src="./new-logo.png">
+  </div>
+
+  <!-- TEXT -->
+  <div class="headline">
+    <div class="sans">Earn a globally</div>
+    <div class="sans">recognized degree</div>
+    <div class="script">from anywhere.</div>
+  </div>
+
+  <!-- IMAGE -->
+  <div class="person-wrap">
+    <img src="new-banner-img.png" class="person">
+  </div>
+
+  <!-- CONTENT -->
+  <div class="info-card">
+    <div class="script-small">Dear Candidate,</div>
+
+    <p class="value">
+     
+Spring Session (March) admissions at Dayananda Sagar University Online are closing soon! Secure your seat now to get a 6-month head start over the October 2026 batch and stay ahead in your career.
+
+    </p>
+
+    <p class="value">
+     We are UGC-entitled and NAAC A+ accredited—your online degree holds the same value as on-campus.
+    </p>
+
+    <p class="value">
+     Act fast! Our admissions team is ready to assist you. Don’t miss this opportunity.
+
+    </p>
+        <p class="value">
+    Best regards, <br>
+Admissions Team
+
+
+    </p>
+  </div>
+
+  <!-- FOOTER IMAGES -->
+  <div class="footer_image_div">
+    <img src="./clg-image.jpeg">
+    <img src="./footer-image.png">
+  </div>
+
+  <!-- SOCIAL ICONS -->
+  <div class="social-icons">
+    <p>Follow us on</p>
+    <div class="social_inner">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+    </div>
+  </div>
+
+</section>
+
+</div>
+</body>
+</html>
